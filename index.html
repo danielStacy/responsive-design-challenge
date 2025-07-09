@@ -13,6 +13,194 @@
     <title>Conquering Responsive Layouts</title>
   </head>
   <body>
+    <header class="header container">
+      <div class="row">
+        <img
+          class="logo"
+          src="./img/logo.svg"
+          alt="Conquering Responsive Layouts logo"
+        />
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav__list nav__list--primary">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+          <ul class="nav__list nav__list--secondary">
+            <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link--btn">Sign up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <section class="hero container" aria-label="Hero section">
+      <h1 class="hero__title">
+        <em class="hero__title hero__title--accent">Responsive layouts</em>
+        don't have to be a struggle
+      </h1>
+      <div class="hero__text-container">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button
+          class="hero__button"
+          aria-label="Learn more about responsive layouts"
+        >
+          I want to learn
+        </button>
+      </div>
+    </section>
+
+    <section class="first-section container">
+      <div class="row">
+        <div class="card card--first">
+          <h2 class="card__title card__title--first">Mobile-first</h2>
+          <p class="card__text card__text--first">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="card__title card__title--first">Efficient</h2>
+          <p class="card__text card__text--first">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="card__title card__title--first">Done right</h2>
+          <p class="card__text card__text--first">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <main class="main container">
+      <div class="row">
+        <section class="second-section">
+          <div class="second-section__text-container">
+            <h2 class="second-section__title">It doesn't have to be so hard</h2>
+            <p class="second-section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <img
+              class="second-section__img"
+              src="./img/layout-sketches.jpg"
+              alt="Web design layout sketches"
+            />
+            <p class="second-section__img-caption-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+          </div>
+        </section>
+        <aside class="sidebar">
+          <div class="card card--second">
+            <h2 class="card__title card__title--second">Break it down</h2>
+            <p class="card__text card__text--second">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="card card--second">
+            <h2 class="card__title card__title--second">Work your way up</h2>
+            <p class="card__text card__text--second">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="card card--second">
+            <h2 class="card__title card__title--second">Break it down</h2>
+            <p class="card__text card__text--second">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <h2 class="footer__title">Just scratching the surface</h2>
+      <div class="row">
+        <div class="footer__section-one">
+          <div class="footer__text-container">
+            <h3 class="footer__title--small">About our company</h3>
+            <p class="footer__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__section-two">
+          <div class="footer__nav-container">
+            <h3 class="footer__title--small"></h3>
+            <ul class="footer-nav__list">
+              <li class="footer-list__item">
+                <a href="#" class="list__link">Home</a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="list__link">About</a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="list__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-container">
+            <h3 class="footer__title--small">Other things</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-list__item">
+                <a href="#" class="list__link">Lorem ipsum</a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="list__link">dolor</a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="list__link">sit amet</a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="list__link">consectetur</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-container">
+            <h3 class="footer__title--small">And more</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-list__item">
+                <a href="#" class="list__link">Lorem ipsum</a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="list__link">dolor</a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="list__link">sit amet</a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#" class="list__link">consectetur</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
