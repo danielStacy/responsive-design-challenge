@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, h6, button {
 .card {
   text-align: center;
   padding: 2rem 0;
+  margin: 0 auto;
 }
 
 .card__title--first {
@@ -194,14 +195,23 @@ h1, h2, h3, h4, h5, h6, button {
 
 .footer-list__item {
   text-align: center;
+  margin-bottom: .8em;
+}
+
+/* Media query section */
+
+@media (max-width: 440px) {
+  .hero__title {
+    font-size: 3.5rem;
+  }
 }
 
 @media (min-width: 700px) {
-  .row {
+  .flex-container {
     display: flex;
   }
 
-  .header__row {
+  .header__flex-container {
     align-items: center;
     justify-content: space-between;
   }
@@ -212,13 +222,42 @@ h1, h2, h3, h4, h5, h6, button {
 
   .nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: flex-container;
     gap: 2rem;
   }
 
   .nav__list {
     display: flex;
     gap: 1rem;
+  }
+
+  .first-section__flex-container {
+    gap: 2.25em;
+  }
+
+  .second-section__flex-container {
+    gap: 2.25em;
+  }
+
+  .sidebar {
+    width: 200%;
+    min-width: 250px;
+    max-width: 500px;
+  }
+
+  .footer__flex-container {
+    justify-content: space-between;
+    gap: 2.5em;
+  }
+
+  /* .footer__section-one {
+    width: 100%;
+  } */
+
+  .footer__section-two {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 2em;
   }
 }
 
