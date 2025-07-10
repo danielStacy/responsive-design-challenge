@@ -87,6 +87,13 @@ h1, h2, h3, h4, h5, h6, button {
   margin-bottom: 2rem;
 }
 
+.nav__link--btn {
+  background-color: var(--white);
+  color: var(--black-dark);
+  border-radius: 100px;
+  padding: .5em 1em;
+}
+
 .hero__button {
   font-size: 1.5rem;
   text-transform: uppercase;
